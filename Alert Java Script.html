@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alert Javascript</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- load jquery and bootstrap -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="card col-sm-4">
+                <div class="card-header bg-primary text-white">
+                    <h4>Basic Alert</h4>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-success" onclick="alert('Thank you for click')">
+                        Click On Me
+                    </button>
+                    <button type="button" class="btn btn-info" onclick="alert('Thank you for your hover')">
+                        Hover On Me
+                    </button>
+                </div>
+            </div>
+
+            <div class="card col-sm-4">
+                <div class="card-header bg-success text-white">
+                    <h4>Dynamic Alert</h4>
+                </div>
+                <div class="card-body">
+                    <input type="text" id="massage" class="form-control">
+                    <button type="button" class="btn btn-success"
+                        onclick="alert (document.getElementById('massage').value)">
+                        <!-- mengambil isi dari elemen dengan id ="massage" -->
+                        Show
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
